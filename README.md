@@ -50,3 +50,23 @@ QPSK, 16QAM, 64QAM and 256QAM in both downlink and uplink.
 It is important to recall that NR supports special multiplexing , it means it can be transmit more than one layer of data simultaneouly using benefits of multiple antenna technologies.Since many of the NR Radio includes multiple antennas. It is often  possible multiple layers are supported. 
 
 In this step, the complex value modulation symbols that needs to be transmitted are mapped into one or more layer.
+
+
+**Antenna Mapping and Pre-coding**<br />
+After mapping to different layers, the next step is to map the corresponding virtual antenna ports.
+
+In order to different data layer to be decoded as if they are different layers on the reciever they need to be pre-coded.
+Pre-coding are based on the channel conditions , the pre-coding process maps the different number of layers into the corresponding number of virtual ports.
+
+This uses precoding matrix .It i sselected based on 'what is the current channel conditions'.
+
+**Resource and Physical Antenna Mapping**<br />
+From the previos step of antenna mapping , we have the symbols for each virtual antenna ports. The Resource Block mapping takes the modulation symbols to be transmitted on each antenna ports anf maps to the set of resource bllock assigned by the MAC's scheduler for current transmission.
+
+Resorce block are shared together with control and reference signals. The other resource block fro actual data transmission.
+
+Number of physical antenna is larger than number of virtual antenna ports, which is used in pre-coding stage. So, linear mapping is applied to map from virtual antenna port to physical antenna.
+
+For mapping, we take the data that is mapped different virtual antenna port and put them into the right time and frequency resource block, which is correspond to the decisionmade by scheduler. And we also placed the control signals here and then we put it to the actual physical antenna port.
+
+
