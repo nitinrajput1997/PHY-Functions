@@ -69,4 +69,7 @@ Number of physical antenna is larger than number of virtual antenna ports, which
 
 For mapping, we take the data that is mapped different virtual antenna port and put them into the right time and frequency resource block, which is correspond to the decisionmade by scheduler. And we also placed the control signals here and then we put it to the actual physical antenna port.
 
-
+**OFDM, DAC, RF**<br />
+Till now, symbols are mapped into the OFDMwaveform together with corresponding cyclic prefixes. Now they are converted to analog waveform using Digital to Analog Converter(DAC). And then converted to RF frequencies and fed to the Antenna for transmission.
+ 
+If Analog-Beam Forming is used , it is carried out in the time domain just before transmission.
