@@ -1,5 +1,7 @@
 # PHY-Functions
 
+![](/phy_func)
+
 Fisrt we need a mechansim to detect erroron thr level of transport block.
 
 **CRC**<br />
