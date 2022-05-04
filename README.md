@@ -1,6 +1,6 @@
 # PHY-Functions
 
-![](/phy_func)
+![](/phy_func.png)
 
 Fisrt we need a mechansim to detect erroron thr level of transport block.
 
